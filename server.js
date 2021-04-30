@@ -49,8 +49,8 @@ app.put("/imageurl", (req, res) => {
 });
 
 //-------------------Listener -----------------------------
-app.listen(2000, () => {
-  console.log("server is running");
+app.listen(process.env.PORT || 2000, () => {
+  console.log(`server is running ${process.env.PORT}`);
 });
 
 /*
